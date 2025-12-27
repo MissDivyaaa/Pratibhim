@@ -6,6 +6,7 @@
   --extra-light: #a3a3a3;
   --white: #ffffff;
   --max-width: 1200px;
+  --portfolio-card-height: 320px;
   --header-font: "Merriweather", serif;
 }
 
@@ -56,6 +57,13 @@
 img {
   display: flex;
   width: 100%;
+}
+
+/* Make portfolio and gallery images share the same responsive height */
+.portfolio__card img,
+.gallery__grid img {
+  height: var(--portfolio-card-height);
+  object-fit: cover;
 }
 
 a {
@@ -308,15 +316,21 @@ nav {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.gallery__grid img {
-  transition: 0.3s;
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
+  .gallery__grid img {
+    transition: 0.3s;
+    width: 100%;
+    height: var(--portfolio-card-height);
+    object-fit: cover;
+  }
 
 .gallery__grid:hover img:not(:hover) {
   opacity: 0.5;
+}
+
+@media (width > 1024px) {
+  :root {
+    --portfolio-card-height: 380px;
+  }
 }
 
 .gallery__btn {
