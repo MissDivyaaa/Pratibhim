@@ -161,6 +161,36 @@ nav {
   gap: 1rem;
 }
 
+/* Responsive grid and image sizing for portfolio cards */
+.portfolio__grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.portfolio__card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .portfolio__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio__card img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio__grid {
+    grid-template-columns: 1fr;
+  }
+  .portfolio__card img {
+    height: 180px;
+  }
+}
+
 .portfolio__card {
   position: relative;
   isolation: isolate;
