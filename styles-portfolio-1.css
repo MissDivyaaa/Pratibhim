@@ -1,0 +1,6 @@
+/* styles-portfolio-1.css
+   Initially imports the main stylesheet so the appearance matches
+   To make this file independent, replace the import with a full copy
+   of `styles.css` and edit as needed.
+*/
+@import url("styles.css");
