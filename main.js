@@ -53,6 +53,25 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+// Instagram swiper (on portfolio pages)
+const instagramSwiper = new Swiper('.instagram-swiper', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: '.instagram-swiper .swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
 ScrollReveal().reveal(".blog__content .section__header", {
   ...scrollRevealOption,
 });
