@@ -6,7 +6,6 @@
   --extra-light: #a3a3a3;
   --white: #ffffff;
   --max-width: 1200px;
-  --portfolio-card-height: 320px;
   --header-font: "Merriweather", serif;
 }
 
@@ -59,10 +58,11 @@ img {
   width: 100%;
 }
 
-/* Make portfolio and gallery images share the same responsive height */
-.portfolio__card img,
+/* Gallery thumbnails: keep original size from main stylesheet */
 .gallery__grid img {
-  height: var(--portfolio-card-height);
+  transition: 0.3s;
+  width: 100%;
+  height: 220px;
   object-fit: cover;
 }
 
@@ -319,7 +319,7 @@ nav {
   .gallery__grid img {
     transition: 0.3s;
     width: 100%;
-    height: var(--portfolio-card-height);
+    height: 220px;
     object-fit: cover;
   }
 
@@ -567,11 +567,7 @@ nav {
 }
 
 /* increase thumbnail height on larger screens */
-@media (width > 1024px) {
-  :root {
-    --portfolio-card-height: 380px;
-  }
-}
+/* No portfolio image height forced here — portfolio cards will match `index.html` behavior */
 
 @media (width > 1024px) {
   .header {
