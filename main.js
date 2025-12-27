@@ -62,6 +62,10 @@ const instagramSwiper = new Swiper('.instagram-swiper', {
     el: '.instagram-swiper .swiper-pagination',
     clickable: true,
   },
+  navigation: {
+    nextEl: '.instagram-swiper .swiper-button-next',
+    prevEl: '.instagram-swiper .swiper-button-prev',
+  },
   breakpoints: {
     768: {
       slidesPerView: 2,
