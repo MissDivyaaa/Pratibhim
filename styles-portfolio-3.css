@@ -62,7 +62,7 @@ img {
 .gallery__grid img {
   transition: 0.3s;
   width: 100%;
-  height: 220px;
+  height: 320px;
   object-fit: cover;
 }
 
