@@ -1,24 +1,3 @@
-/* styles-portfolio-2.css — imports base styles; customize independently if needed */
-@import url("styles.css");
-
-/* Responsive grid and image sizing for portfolio cards (portfolio-2) */
-.portfolio__grid {
-  grid-template-columns: repeat(4, 1fr);
-}
-.portfolio__card img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  display: block;
-}
-@media (max-width: 900px) {
-  .portfolio__grid { grid-template-columns: repeat(2, 1fr); }
-  .portfolio__card img { height: 220px; }
-}
-@media (max-width: 480px) {
-  .portfolio__grid { grid-template-columns: 1fr; }
-  .portfolio__card img { height: 180px; }
-}
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
