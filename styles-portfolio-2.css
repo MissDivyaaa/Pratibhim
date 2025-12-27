@@ -319,7 +319,7 @@ nav {
   .gallery__grid img {
     transition: 0.3s;
     width: 100%;
-    height: 320px;
+    height: 400px;
     object-fit: cover;
   }
 
@@ -579,4 +579,71 @@ nav {
 }
 
 /* styles-portfolio-2.css — imports base styles; customize independently if needed */
+
+/* Instagram swiper: make slides look and size like portfolio cards */
+.instagram-swiper {
+  width: 100%;
+  padding: 1rem 0;
+}
+.instagram-swiper .swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+.instagram-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.instagram-swiper .portfolio__card {
+  width: 100%;
+  max-width: 560px;
+  position: relative;
+}
+.instagram-swiper .portfolio__card img {
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (width > 1024px) {
+  .instagram-swiper .portfolio__card img {
+    height: 480px;
+  }
+  .instagram-swiper {
+    padding: 1.5rem 0;
+  }
+}
+
+/* Swiper navigation arrows for Instagram slideshow */
+.instagram-swiper .swiper-button-next,
+.instagram-swiper .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 12;
+}
+.instagram-swiper .swiper-button-next::after,
+.instagram-swiper .swiper-button-prev::after {
+  font-size: 18px;
+  color: #fff;
+}
+.instagram-swiper .swiper-button-next { right: 8px; }
+.instagram-swiper .swiper-button-prev { left: 8px; }
+
+@media (max-width: 767px) {
+  .instagram-swiper .swiper-button-next,
+  .instagram-swiper .swiper-button-prev {
+    width: 36px;
+    height: 36px;
+  }
+  .instagram-swiper .swiper-button-next { right: 6px; }
+  .instagram-swiper .swiper-button-prev { left: 6px; }
+}
 
