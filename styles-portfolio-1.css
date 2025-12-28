@@ -251,17 +251,21 @@ nav {
   color: var(--white);
 }
 
-.portfolio__card:nth-child(1)::after {
-  content: "Portraits";
+/* .portfolio__card:nth-child(1)::after {
+  content: "RITUALS";
 }
 
 .portfolio__card:nth-child(2)::after {
-  content: "Weddings";
+  content: "RING CEREMONY";
 }
 
 .portfolio__card:nth-child(3)::after {
-  content: "Fashions";
+  content: "PORTRAIT";
 }
+
+.portfolio__card:nth-child(4)::after {
+  content: "WEDDING";
+} */
 
 .portfolio__content {
   position: absolute;
