@@ -176,7 +176,7 @@ nav {
   color: var(--white);
 }
 
-.portfolio__card:nth-child(1)::after {
+/* .portfolio__card:nth-child(1)::after {
   content: "Portraits";
 }
 
@@ -186,7 +186,7 @@ nav {
 
 .portfolio__card:nth-child(3)::after {
   content: "Fashions";
-}
+} */
 
 .portfolio__content {
   position: absolute;
